@@ -1,0 +1,246 @@
+* {
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+
+
+body {
+    background-image: url(./images/bg-pattern-top-desktop.svg);
+    background-image: url(./images/bg-pattern-bottom-desktop.svg);
+}
+
+.primary{
+height: 100vh;
+width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.main {
+/* background-color: lightblue; */
+width: 1440px;
+height: 80%;
+display: flex;
+flex-direction: column;
+/* justify-content: center; */
+align-items: center;
+}
+
+.container1 {
+/* background-color: bisque; */
+width: 1440px;
+height: 50%;
+display: flex;
+}
+
+.box1 {
+/* background-color: cornflowerblue; */
+width: 50%;
+height: 100%;
+display: flex;
+align-items: center;
+}
+.box2 {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.box1-div {
+    width: 60%;
+    /* margin-left: 10rem; */
+}
+
+.box2-div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    /* margin-right: 10rem; */
+}
+
+.rating1 {
+    margin-right: 20%
+}
+
+.rating2 {
+    margin-right: 10%;
+}
+
+.box2-div-box {
+    width: 70%;
+    background-color: hsl(300, 24%, 96%);
+    border-radius: 10px;
+    margin-top: 1.5%;
+    margin-bottom: 1.5%;
+}
+
+
+h1 {
+    font-family: 'League Spartan', sans-serif;
+    font-size: 4rem;
+    margin-bottom: 1.5rem;
+    color: hsl(300, 43%, 22%);
+}
+
+.box2-div-box > h4 {
+    padding: 3% 0 3% 3%;
+    margin: 0 5% 0 3%;
+}
+.box1-div > p {
+    font-family: 'League Spartan', sans-serif;
+    font-size: 1.1rem;
+    margin-top: 1rem;
+    color: hsl(303, 10%, 53%);
+}
+
+.box2-div img {
+    margin: 0 3px;
+}
+
+.h4-span {
+    margin-left: 20px;
+    color: hsl(300, 43%, 22%);
+}
+
+h4 {
+    font-family: 'League Spartan', sans-serif;
+    font-size: large;
+}
+
+.container2 {
+    display: flex;
+    width: 1440px;
+    height: 50%;
+    justify-content: space-between;
+}
+
+.box3, .box4, .box5 {
+    width: 25%;
+    height: 40%;
+    background-color: hsl(300, 43%, 22%);
+    padding: 2.5%;
+    border-radius: 10px;
+    
+}
+
+.box-heading {
+    display: flex;
+    align-items: center;
+    /* gap: 10px; */
+}
+
+.box-images {
+    border-radius: 100%;
+    width: 60%;
+}
+
+.box-text {
+    font-family: 'League Spartan', sans-serif;
+    color: white;
+    margin-top: 5%;
+}
+
+.box-h4-pink {
+    color: hsl(333, 80%, 67%);
+    font-size: medium;
+    margin-top: 5%;
+}
+
+.box-h4-white {
+    color: white;
+}
+
+.box4 {
+    margin-top: 2%;
+}
+.box5 {
+    margin-top: 4%;
+}
+
+@media (max-width: 375px) {
+    * {
+        border: 0;
+        padding: 0;
+        margin: 0;
+    }
+
+    body {
+        background-image: url(./images/bg-pattern-top-mobile.svg);
+        background-image: url(./images/bg-pattern-bottom-mobile.svg);
+    }
+
+    .primary {
+        height: 100%;
+    }
+    .main {
+        width: 375px;
+        height: 100%
+    }
+    .container1 {
+        width: 375px;
+        flex-direction: column;
+        height: 100%;
+        margin-top: 15%;
+    }
+
+    .container2 {
+        width: 375px;
+        flex-direction: column;
+        height: 100%;
+        margin: 10% 0;
+        gap: 1rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .box1, .box2 {
+        width: 100%;
+    }
+    .box1-div {
+        width: 100%;
+    }
+
+    .box2-div {
+        margin-top: 5%;
+    }
+
+    .box2-div-box {
+        width: 90%;
+        margin: 3% 5%;
+    }
+    .rating1, .rating2 {
+        /* margin-right: 0; */
+    }
+
+    .box2-div-box > h4 {
+        padding: 3% 3%;
+        margin: 2% 0;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+    h1 {
+        text-align: center;
+        font-size: 3rem;
+    }
+    .box1-div > p {
+        text-align: center;
+        width: 90%;
+        margin: 0 5%;
+    }
+
+    .box2-div-box span {
+        margin: 1% 0;
+    }
+
+    .box3, .box4, .box5 {
+        width: 80%;
+        margin: 0 5%;
+        padding: 5%;
+        height: 100%;
+    }
+}
